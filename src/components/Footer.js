@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Layout from "./Layout";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Footer = () => {
   return (
@@ -13,23 +14,15 @@ const Footer = () => {
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
 
         <div className="flex items-center lg:py-2">
-          Built with <span className="text-primary text-2xl px-1 dark:text-primaryDark">&#9825;	</span> by&nbsp;
+          Built with <span className="text-[#000000] text-2xl px-1 dark:text-primaryDark"><TbBrandNextjs /></span> by&nbsp;
           <Link
-            href="https://devdreaming.com"
+            href="https://www.linkedin.com/in/ma-sum-575068196/"
             target="_blank"
             className="underline underline-offset-2"
           >
-            CodeBucks
+            Masum
           </Link>
         </div>
-
-        <Link
-          href="https://devdreaming.com/about"
-          target="_blank"
-          className="underline underline-offset-2"
-        >
-          Say Hello
-        </Link>
       </Layout>
     </footer>
   );
