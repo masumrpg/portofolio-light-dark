@@ -1,23 +1,34 @@
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import React from 'react'
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import blackLogo from '../../public/images/black-logo.png';
+import whiteLogo from '../../public/images/white-logo.png';
 
 
 let MotionLink = motion(Link);
+let data = ''
+let logo = blackLogo
 
 const Logo = () => {
+  useEffect(() => {
+    const userPref = window.localStorage.getItem("theme");
+    data = userPref
+  });
+
+  if (data.match('light')) {
+    logo = blackLogo
+  }
+  if (data.match('dark')) {
+    logo = whiteLogo
+  }
 
   return (
     <div
-     className='flex flex-col items-center justify-center mt-2'>
-        <MotionLink href="/" 
-    className='flex items-center justify-center rounded-full w-16 h-16  bg-dark text-white dark:border-2 dark:border-solid dark:border-light
-    text-2xl font-bold'
-    whileHover={{
-      backgroundColor:["#121212", "rgba(131,58,180,1)","rgba(253,29,29,1)","rgba(252,176,69,1)","rgba(131,58,180,1)", "#121212"],
-      transition:{duration:1, repeat: Infinity }
-    }}
-    >CB</MotionLink>
+      className='flex flex-col items-center justify-center mt-2'>
+      <MotionLink href="/"
+        className='flex items-center justify-center rounded-full w-14 h-14'
+      ><Image src={logo} alt='LogoMasum' /></MotionLink>
     </div>
   )
 }

@@ -29,6 +29,7 @@ export function useThemeSwitch() {
         } else {
           document.documentElement.classList.remove("dark");
         }
+
         return window.matchMedia(preferDarkQuery).matches ? "dark" : "light";
       }
     };
@@ -54,4 +55,4 @@ export function useThemeSwitch() {
   // we're doing it this way instead of as an effect so we only
   // set the localStorage value if they explicitly change the default
   return [mode, setMode];
-}
+};
