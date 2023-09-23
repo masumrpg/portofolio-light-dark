@@ -66,19 +66,19 @@ const MovingImg = ({ title, img, link }) => {
   );
 };
 
-const Article = ({ img, title, date, link }) => {
+const Contacts = ({ img, title, date, link }) => {
   return (
     <motion.li
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-2 rounded-xl flex sm:flex-col items-center justify-between 
+      className="relative w-full p-4 py-6 my-2 rounded-xl flex sm:flex-col items-center justify-between
       bg-light text-dark first:mt-0 border border-solid border-dark
       border-r-4 border-b-4 dark:bg-dark dark:border-light
       "
     >
       <MovingImg img={img} title={title} link={link} />
-      <span className="text-primary font-semibold dark:text-primaryDark min-w-max pl-4 sm:self-start 
+      <span className="text-primary font-semibold dark:text-primaryDark min-w-max pl-4 sm:self-start
       sm:pl-0 xs:text-sm">
         {date}
       </span>
@@ -88,10 +88,10 @@ const Article = ({ img, title, date, link }) => {
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
+    <li className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl
     dark:bg-dark dark:border-light">
       <div
-        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
+        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark
         -z-10  "
       />
       <Link
@@ -123,14 +123,12 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   );
 };
 
-export default function Articles() {
+export default function Contact() {
   return (
     <>
       <Head>
-        <title>Simple Portfolio Built with Nextjs | Articles Page</title>
-        <meta name="description" content="Browse through CodeBucks's collection of software engineering articles and 
-        tutorials on Next.js, React.js, web development, and more. 
-        Gain valuable insights and stay up-to-date with SEO tips for building a developer portfolio." />
+        <title>Contact Page</title>
+        <meta name="description" content="Contact me." />
       </Head>
       <TransitionEffect />
       <main
@@ -147,7 +145,7 @@ export default function Articles() {
               img={blog1}
               title="build a custom pagination component in reactjs from scratch"
               time="9 min read"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this 
+              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this
               step-by-step guide to integrate Pagination component in your ReactJS project."
               link="https://devdreaming.com/blogs/create-pagination-component-reactjs"
             />
@@ -156,8 +154,8 @@ export default function Articles() {
               img={blog2}
               title="creating stunning loading screens in react: Build 3 types of loading screens"
               time="10 min read"
-              summary="Learn how to create stunning loading screens in React with 3 different methods. 
-              Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the 
+              summary="Learn how to create stunning loading screens in React with 3 different methods.
+              Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the
               user experience."
               link="https://devdreaming.com/blogs/create-3-different-types-of-loading-screens-in-react"
             />
@@ -168,37 +166,37 @@ export default function Articles() {
           </h2>
 
           <ul className="flex flex-col items-center relative">
-            <Article
+            <Contacts
               title="form validation in reactjs: build a reusable custom hook for inputs and error handling"
               img={blog3}
               date="January 27, 2023"
               link="https://devdreaming.com/blogs/react-form-validation-custom-hook"
             />
-            <Article
+            <Contacts
               title="silky smooth scrolling in reactjs: a step-by-step guide for react developers"
               img={blog4}
               date="January 30, 2023"
               link="https://devdreaming.com/blogs/smooth-scrolling-in-react-js"
             />
-            <Article
+            <Contacts
               title="creating an efficient modal component in react using hooks and portals"
               img={blog5}
               date="January 29, 2023"
               link="https://devdreaming.com/blogs/create-efficient-modal-react-portals"
             />
-            <Article
+            <Contacts
               title="build a fabulous todo list app with react, redux and framer-motion"
               img={blog6}
               date="January 28, 2023"
               link="https://devdreaming.com/blogs/build-react-redux-framer-motion-todo-app"
             />
-            <Article
+            <Contacts
               title="redux simplified: a beginner's guide for web developers"
               img={blog7}
               date="January 31, 2023"
               link="https://devdreaming.com/blogs/redux-simply-explained"
             />
-            <Article
+            <Contacts
               title="what is higher order component (hoc) in react?"
               date="January 4, 2023"
               img={blog8}

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portofolio - Ma&apos;sum</title>
+        <title>Ma&apos;sum</title>
         <meta
           name="description"
           content="Portofolio Masum"

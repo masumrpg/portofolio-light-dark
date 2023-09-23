@@ -49,19 +49,27 @@ const Experience = () => {
 
   return (
 
-      <div className="my-64">
-        <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-          Experience
-        </h2>
+    <div className="my-64">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        Experience
+      </h2>
 
-        <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
-          <motion.div
-            className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
+      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
+        <motion.div
+          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark
             origin-top  dark:bg-primaryDark dark:shadow-3xl"
-            style={{ scaleY: scrollYProgress }}
+          style={{ scaleY: scrollYProgress }}
+        />
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
+            position="Administration"
+            company="Pangestu Broiler"
+            companyLink="https://www.google.com/search?q=pangestu+broiler&rlz=1C1ONGR_enID1051ID1051&oq=pangestu+broiler&aqs=chrome..69i57.4848j0j7&sourceid=chrome&ie=UTF-8#rlimm=9195363849140769349"
+            time="2022-Present"
+            address="Kuwarasan, KBM"
+            work="Worked on a team responsible for developing company, make a admin inputer with ExcelVBA for fast input data, handle finance, human resources and many more."
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-            <Details
+          {/* <Details
               position="Software Engineer"
               company="Google"
               companyLink="https://google.com"
@@ -112,11 +120,11 @@ const Experience = () => {
               work="Assisted in teaching a course on computer programming, held office
               hours to help students with assignments, and graded exams and
               assignments."
-            />
-          </ul>
-        </div>
-        </div>
-    );
+            /> */}
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Experience;

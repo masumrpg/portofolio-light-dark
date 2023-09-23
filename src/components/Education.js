@@ -44,24 +44,24 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor of Science in Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            type="Junior High School"
+            time="2010-2013"
+            place="Adimulyo's Junior High School"
+            info="Graduated from junior high school at 2013, location in Kecamatan Adimulyo Kabupaten Kebumen."
           />
 
           <Details
-            type="Master of Computer Science"
-            time="2020-2022"
-            place="Stanford University"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
+            type="Islamic Senior High School"
+            time="2013-2016"
+            place="MAN 4 Kebumen"
+            info="Graduated from senior high school at 2016, location in Kecamatan Gombong Kabupaten Kebumen."
           />
 
           <Details
-            type="Online Coursework"
-            time="2016-2020"
-            place="Coursera and edX"
-            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
+            type="Bachelor of Management"
+            time="2017-2021"
+            place="Putra Bangsa University"
+            info="Graduated bachelor at 2021, location in Guyangan Gombong Kabupaten Kebumen, complete the final project in 2021"
           />
         </ul>
       </div>

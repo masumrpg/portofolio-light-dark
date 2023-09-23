@@ -20,8 +20,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className="relative flex w-full items-center  justify-between rounded-3xl rounded-br-2xl border
-border-solid border-dark bg-light p-12 shadow-2xl  dark:border-light dark:bg-dark  lg:flex-col 
-lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4 
+border-solid border-dark bg-light p-12 shadow-2xl  dark:border-light dark:bg-dark  lg:flex-col
+lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
     "
     >
       <div
@@ -76,7 +76,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             href={link}
             target={"_blank"}
             className="ml-4 rounded-lg
-             bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark 
+             bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark
              sm:px-4 sm:text-base
             "
             aria-label="Crypto Screener Application"
@@ -93,8 +93,8 @@ const Project = ({ title, type, img, link, github }) => {
 
   return (
     <article
-      className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
-      border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark 
+      className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl
+      border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark
       xs:p-4
       "
     >
@@ -163,11 +163,10 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <title>Projects Page</title>
         <meta
           name="description"
-          content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
-        expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
+          content="Project portfolio."
         />
       </Head>
 

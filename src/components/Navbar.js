@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
   DribbbleIcon,
@@ -13,6 +12,10 @@ import {
 } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
+
+import blackLogo from '../../public/images/black-logo.png';
+import whiteLogo from '../../public/images/white-logo.png';
+import Image from "next/image";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -38,8 +41,8 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
   const handleClick = () => {
     toggle();
-    router.push(href)
-  }
+    router.push(href);
+  };
 
   return (
     <button className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`} onClick={handleClick}>
@@ -63,9 +66,19 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitch();
   const [isOpen, setIsOpen] = useState(false);
 
+  let MotionLink = motion(Link);
+  let logo = blackLogo;
+
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  if (mode === 'dark') {
+    logo = whiteLogo;
+  } else if (mode === 'light') {
+    logo = blackLogo;
+  }
+
 
   return (
     <header className="w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light
@@ -91,7 +104,7 @@ const Navbar = () => {
           <CustomLink className="mr-4" href="/" title="Home" />
           <CustomLink className="mx-4" href="/about" title="About" />
           <CustomLink className="mx-4" href="/projects" title="Projects" />
-          <CustomLink className="ml-4" href="/articles" title="Articles" />
+          <CustomLink className="ml-4" href="/contact" title="Contact" />
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -254,7 +267,13 @@ const Navbar = () => {
       }
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
-        <Logo />
+        {/* <Logo /> */}
+        <div
+          className='flex flex-col items-center justify-center mt-2'>
+          <MotionLink href=""
+            className='flex items-center justify-center rounded-full w-12 h-12 cursor-default'
+          ><Image src={logo} alt='LogoMasum' /></MotionLink>
+        </div>
       </div>
 
     </header>
