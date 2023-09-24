@@ -115,7 +115,7 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-6 mr-1"
-            href="#"
+            href="https://twitter.com/xMacum"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my twitter profile"
@@ -126,7 +126,7 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-6 mx-3"
-            href="#"
+            href="https://github.com/masumrpg"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my github profile"
@@ -137,7 +137,7 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-6 mx-3"
-            href="#"
+            href="https://www.linkedin.com/in/ma-sum-575068196/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my linkedin profile"
@@ -148,7 +148,7 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-6 mx-3"
-            href="#"
+            href="https://www.instagram.com/masum.rpg/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my dribbble profile"
@@ -194,7 +194,7 @@ const Navbar = () => {
               <motion.a
                 target={"_blank"}
                 className="w-6 m-1 mr-3 sm:mx-1"
-                href="#"
+                href="https://twitter.com/xMacum"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Checkout my twitter profile"
@@ -204,8 +204,8 @@ const Navbar = () => {
 
               <motion.a
                 target={"_blank"}
-                className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
-                href="#"
+                className="w-6 m-1 mx-3 sm:mx-1"
+                href="https://github.com/masumrpg"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Checkout my github profile"
@@ -216,7 +216,7 @@ const Navbar = () => {
               <motion.a
                 target={"_blank"}
                 className="w-6 m-1 mx-3 sm:mx-1"
-                href="#"
+                href="https://www.linkedin.com/in/ma-sum-575068196/"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Checkout my linkedin profile"
@@ -227,7 +227,7 @@ const Navbar = () => {
               <motion.a
                 target={"_blank"}
                 className="w-6 m-1 mx-3 sm:mx-1"
-                href="#"
+                href="https://www.instagram.com/masum.rpg/"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Checkout my dribbble profile"
