@@ -23,6 +23,7 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
+        'bounce': 'bounce 5s infinite'
       },
       backgroundImage: {
         circularLight:

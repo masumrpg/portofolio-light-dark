@@ -63,7 +63,6 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  // href="mailto:masumrpg@gmail.com"
                   href="/contact"
                   className="ml-4 text-lg font-medium capitalize text-dark underline
                   dark:text-light md:text-base"
@@ -78,7 +77,7 @@ export default function Home() {
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image
-            className="relative h-auto w-full"
+            className="relative h-auto w-full invisible dark:visible dark:transition-all duration-100 animate-bounce"
             src={lightBulb}
             alt="Codebucks"
           />

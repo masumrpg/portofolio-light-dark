@@ -2,20 +2,20 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import {
-  DribbbleIcon,
+  InstagramIcon,
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
   SunIcon,
   TwitterIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
 
-import blackLogo from '../../public/images/black-logo.png';
-import whiteLogo from '../../public/images/white-logo.png';
-import Image from "next/image";
+// Logo mid
+// import blackLogo from '../../public/images/black-logo.png';
+// import whiteLogo from '../../public/images/white-logo.png';
+// import Image from "next/image";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -66,18 +66,20 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitch();
   const [isOpen, setIsOpen] = useState(false);
 
-  let MotionLink = motion(Link);
-  let logo = blackLogo;
+  // Logo mid
+  // let MotionLink = motion(Link);
+  // let logo = blackLogo;
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
-  if (mode === 'dark') {
-    logo = whiteLogo;
-  } else if (mode === 'light') {
-    logo = blackLogo;
-  }
+  // Logo mid
+  // if (mode === 'dark') {
+  //   logo = whiteLogo;
+  // } else if (mode === 'light') {
+  //   logo = blackLogo;
+  // }
 
 
   return (
@@ -112,7 +114,7 @@ const Navbar = () => {
         >
           <motion.a
             target={"_blank"}
-            className="w-6 mr-3"
+            className="w-6 mr-1"
             href="#"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -120,6 +122,7 @@ const Navbar = () => {
           >
             <TwitterIcon />
           </motion.a>
+
           <motion.a
             target={"_blank"}
             className="w-6 mx-3"
@@ -130,6 +133,7 @@ const Navbar = () => {
           >
             <GithubIcon />
           </motion.a>
+
           <motion.a
             target={"_blank"}
             className="w-6 mx-3"
@@ -140,16 +144,7 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
-            target={"_blank"}
-            className="w-6 mx-3 bg-light rounded-full"
-            href="#"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my pinterest profile"
-          >
-            <PinterestIcon />
-          </motion.a>
+
           <motion.a
             target={"_blank"}
             className="w-6 mx-3"
@@ -158,7 +153,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my dribbble profile"
           >
-            <DribbbleIcon />
+            <InstagramIcon />
           </motion.a>
 
           <button
@@ -206,6 +201,7 @@ const Navbar = () => {
               >
                 <TwitterIcon />
               </motion.a>
+
               <motion.a
                 target={"_blank"}
                 className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
@@ -216,6 +212,7 @@ const Navbar = () => {
               >
                 <GithubIcon />
               </motion.a>
+
               <motion.a
                 target={"_blank"}
                 className="w-6 m-1 mx-3 sm:mx-1"
@@ -226,16 +223,7 @@ const Navbar = () => {
               >
                 <LinkedInIcon />
               </motion.a>
-              <motion.a
-                target={"_blank"}
-                className="w-6 m-1 mx-3 bg-light rounded-full sm:mx-1"
-                href="#"
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                aria-label="Checkout my pinterest profile"
-              >
-                <PinterestIcon />
-              </motion.a>
+
               <motion.a
                 target={"_blank"}
                 className="w-6 m-1 mx-3 sm:mx-1"
@@ -244,7 +232,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.9 }}
                 aria-label="Checkout my dribbble profile"
               >
-                <DribbbleIcon />
+                <InstagramIcon />
               </motion.a>
 
               <button
@@ -266,15 +254,15 @@ const Navbar = () => {
           : null
       }
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
-        {/* <Logo /> */}
+      {/* Logo mid */}
+      {/* <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
         <div
           className='flex flex-col items-center justify-center mt-2'>
           <MotionLink href=""
             className='flex items-center justify-center rounded-full w-12 h-12 cursor-default'
           ><Image src={logo} alt='LogoMasum' /></MotionLink>
         </div>
-      </div>
+      </div> */}
 
     </header>
   );
