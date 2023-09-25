@@ -25,14 +25,14 @@ const TransitionEffect = () => {
       /> */}
 
       <motion.div
-        className="fixed top-0 left-0 w-screen h-screen z-50 bg-black origin-bottom dark:bg-white"
+        className="fixed top-0 left-0 w-screen h-screen z-50 bg-dark origin-bottom dark:bg-light"
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-screen h-screen z-50 bg-black origin-top dark:bg-white"
+        className="fixed top-0 left-0 w-screen h-screen z-50 bg-dark origin-top dark:bg-light"
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 0 }}
@@ -41,14 +41,14 @@ const TransitionEffect = () => {
 
 
       <motion.div
-        className="fixed top-0 left-0 w-screen h-screen z-40 bg-white origin-bottom dark:bg-black"
+        className="fixed top-0 left-0 w-screen h-screen z-40 bg-light origin-bottom dark:bg-dark"
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
         transition={{ delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-screen h-screen z-40 bg-white origin-top dark:bg-black"
+        className="fixed top-0 left-0 w-screen h-screen z-40 bg-light origin-top dark:bg-dark"
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 0 }}
