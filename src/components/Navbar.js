@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import {
   InstagramIcon,
@@ -25,8 +25,9 @@ const CustomLink = ({ href, title, className = "" }) => {
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+              inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
+              transition-all delay-[1000ms] dark:transition-all dark:delay-[1000ms]
+              group-hover:w-full dark:bg-light
               ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
               `}
       >
@@ -50,7 +51,8 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       <span
         className={`
               inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+              transition-all delay-[1000ms] dark:transition-all dark:delay-[1000ms]
+              group-hover:w-full dark:bg-light
               ${router.asPath === href ? "w-full" : " w-0"} lg:bg-light lg:dark:bg-dark
               `}
       >
@@ -66,13 +68,26 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitch();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Logo mid
-  // let MotionLink = motion(Link);
-  // let logo = blackLogo;
-
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+
+  // disable scroll on popup
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    // console.log(document.body.style.overflow);
+  });
+
+
+
+  // Logo mid
+  // let MotionLink = motion(Link);
+  // let logo = blackLogo;
 
   // Logo mid
   // if (mode === 'dark') {
@@ -89,7 +104,7 @@ const Navbar = () => {
 
       <button
         type="button"
-        className=" flex-col items-center justify-center hidden lg:flex"
+        className="flex-col items-center justify-center hidden lg:flex"
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
         onClick={handleClick}
@@ -103,10 +118,10 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center lg:hidden"
       >
         <nav className="flex items-center justify-center">
-          <CustomLink className="mr-4" href="/" title="Home" />
-          <CustomLink className="mx-4" href="/about" title="About" />
-          <CustomLink className="mx-4" href="/projects" title="Projects" />
-          <CustomLink className="ml-4" href="/contact" title="Contact" />
+          <CustomLink className="mr-4 transition-all delay-[500ms] dark:transition-all dark:delay-[800ms]" href="/" title="Home" />
+          <CustomLink className="mx-4 transition-all delay-[600ms] dark:transition-all dark:delay-[700ms]" href="/about" title="About" />
+          <CustomLink className="mx-4 transition-all delay-[700ms] dark:transition-all dark:delay-[600ms]" href="/projects" title="Projects" />
+          <CustomLink className="ml-4 transition-all delay-[800ms] dark:transition-all dark:delay-[500ms]" href="/contact" title="Contact" />
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
@@ -174,18 +189,17 @@ const Navbar = () => {
       {
         isOpen ?
 
-          <motion.div className="min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2
+          <motion.div className="min-w-full flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2
       -translate-y-1/2
-      py-32 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md
-      "
+      py-52 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md"
             initial={{ scale: 0, x: "-50%", y: "-50%", opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
           >
             <nav className="flex items-center justify-center flex-col">
-              <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
-              <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
-              <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
-              <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/contact" title="Contact" />
+              <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2 transition-all delay-[500ms] dark:transition-all dark:delay-[800ms]" href="/" title="Home" />
+              <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2 transition-all delay-[600ms] dark:transition-all dark:delay-[700ms]" href="/about" title="About" />
+              <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2 transition-all delay-[700ms] dark:transition-all dark:delay-[600ms]" href="/projects" title="Projects" />
+              <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2 transition-all delay-[800ms] dark:transition-all dark:delay-[500ms]" href="/contact" title="Contact" />
             </nav>
             <nav
               className="flex items-center justify-center  mt-2

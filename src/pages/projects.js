@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
+import { GithubIconSmall } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import Head from "next/head";
@@ -26,7 +26,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
     >
       <div
         className="absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark
-         dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%]
+        dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%]
         xs:rounded-[1.5rem] "
       />
 
@@ -70,14 +70,14 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             className="w-10"
             aria-label="Crypto Screener Application github link"
           >
-            <GithubIcon />
+            <GithubIconSmall />
           </Link>
           <Link
             href={link}
             target={"_blank"}
             className="ml-4 rounded-lg
-             bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark
-             sm:px-4 sm:text-base
+            bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark
+            sm:px-4 sm:text-base
             "
             aria-label="Crypto Screener Application"
           >
@@ -100,7 +100,7 @@ const Project = ({ title, type, img, link, github }) => {
     >
       <div
         className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark
-         dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%]
+        dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%]
         xs:rounded-[1.5rem]  "
       />
 
@@ -151,7 +151,7 @@ const Project = ({ title, type, img, link, github }) => {
             className="w-8 md:w-6"
             aria-label={title}
           >
-            <GithubIcon />
+            <GithubIconSmall />
           </Link>
         </div>
       </div>
