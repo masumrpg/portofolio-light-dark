@@ -45,7 +45,7 @@ export default function About() {
       </Head>
       <TransitionEffect />
       <main
-        className={`flex  w-full flex-col items-center justify-center dark:text-light`}
+        className={`flex w-full flex-col items-center justify-center text-dark dark:text-light`}
       >
         <Layout className="pt-16">
           <AnimatedText
@@ -56,21 +56,22 @@ export default function About() {
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2
             md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <h2 className="mb-4 text-lg font-bold uppercase
+              transition-all delay-[700ms] dark:transition-all dark:delay-[700ms]">
                 BIOGRAPHY
               </h2>
-              <p className="font-medium ">
+              <p className="font-medium transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                 Hi, I&apos;m <strong>Ma&apos;sum</strong>, a web developer and
                 UI/UX designer with a passion for creating beautiful,
                 functional, and user-centered digital experiences.I am always looking for new and
                 innovative ways to bring my client&apos;s visions to life.
               </p>
-              <p className="my-4 font-medium">
+              <p className="my-4 font-medium transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                 I believe that design is about more than just making things look
                 pretty – it&apos;s about solving problems and creating
                 intuitive, enjoyable experiences for users.
               </p>
-              <p className="font-medium">
+              <p className="font-medium transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                 Whether I&apos;m working on a website, mobile app, or other
                 digital product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
@@ -80,6 +81,7 @@ export default function About() {
             </div>
             <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark
             bg-light p-8 dark:border-light dark:bg-dark
+            transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]
             xl:col-span-4 md:col-span-8 md:order-1
             ">
               <div
@@ -90,7 +92,7 @@ export default function About() {
               <Image
                 className="h-auto w-full rounded-2xl"
                 src={profile}
-                alt="Codebucks"
+                alt="Masum"
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
@@ -98,13 +100,15 @@ export default function About() {
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row
-            xl:items-center md:order-3">
+            xl:items-center md:order-3
+            transition-all delay-[700ms] dark:transition-all dark:delay-[700ms]">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumberFramerMotion value={5} />+
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
+                xl:text-center md:text-lg sm:text-base xs:text-sm
+                transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                   satisfied clients
                 </h2>
               </div>
@@ -114,7 +118,8 @@ export default function About() {
                   <AnimatedNumberFramerMotion value={5} />+
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
+                xl:text-center md:text-lg sm:text-base xs:text-sm
+                transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                   projects completed
                 </h2>
               </div>
@@ -124,7 +129,8 @@ export default function About() {
                   <AnimatedNumberFramerMotion value={1} />+
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
+                xl:text-center md:text-lg sm:text-base xs:text-sm
+                transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                   Years of experience
                 </h2>
               </div>

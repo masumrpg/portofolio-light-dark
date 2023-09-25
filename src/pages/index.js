@@ -25,7 +25,7 @@ export default function Home() {
       <TransitionEffect />
 
       <article
-        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
+        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start transition-all delay-[700ms] dark:transition-all dark:delay-[700ms]`}
       >
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
           <div className="flex w-full items-start justify-between md:flex-col">
@@ -34,7 +34,7 @@ export default function Home() {
                 src={profilePic}
                 as='image'
                 alt="Masum"
-                className="h-auto w-full"
+                className="h-auto w-full brightness-100 dark:-hue-rotate-30 transition-all delay-1000"
                 sizes="100vw"
                 priority
               />
@@ -54,10 +54,11 @@ export default function Home() {
                   // }}
                   href="/projects"
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
-            capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark
-            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-            md:p-2 md:px-4 md:text-base
-            `}
+                  capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark
+                dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
+                  md:p-2 md:px-4 md:text-base
+                  transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]
+                  `}
                 >
                   Go to Projects<LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
@@ -65,7 +66,8 @@ export default function Home() {
                 <Link
                   href="/contact"
                   className="ml-4 text-lg font-medium capitalize text-dark underline
-                  dark:text-light md:text-base"
+                  dark:text-light md:text-base
+                  transition-all delay-[1000ms] dark:transition-all dark:delay-[1000ms]"
                 >
                   Contact
                 </Link>
@@ -77,7 +79,7 @@ export default function Home() {
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
           <Image
-            className="relative h-auto w-full invisible dark:visible dark:transition-all duration-100 animate-bounce"
+            className="relative h-auto w-full invisible dark:visible transition-all delay-700 animate-bounce"
             src={lightBulb}
             alt="Codebucks"
           />
