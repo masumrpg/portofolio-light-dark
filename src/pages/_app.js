@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
         <Footer />
       </main>
       {/* scrollbar */}
-      <motion.div className="fixed left-0 right-0 rounded-xl h-[5px] bg-black bottom-[90px] dark:bg-white" style={{ scaleX }} />
+      <motion.div className="fixed left-0 right-0 rounded-xl h-[5px] md:hidden bg-black bottom-[90px] dark:bg-white" style={{ scaleX }} />
     </>
   );
 }
