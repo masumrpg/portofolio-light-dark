@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import proj1 from "../../public/images/projects/al-quran-react-native.png";
 import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
 import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
 import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
@@ -182,12 +182,12 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                type="Mobile React Native"
+                title="Al Qu'ran Offline"
+                summary="A mobile Al Qur'an App using React Native, Expo, Expo Router and Expo Tabs. It shows detail surah almost all the verses. Translete only in Indonesia for now."
                 img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+                link="https://play.google.com/store/apps/details?id=com.masumrpg.AlQuranOffline"
+                github="https://github.com/masumrpg/Al-Quran-Offline"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
