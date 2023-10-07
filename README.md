@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portofolio Ma'sum (NextJS)
+
+![Image](https://cdn.dribbble.com/userupload/10602534/file/original-77f36dd29f4cce25ce3f6369241d0747.png?resize=1024x457)
 
 ## Getting Started
 
