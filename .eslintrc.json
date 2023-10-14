@@ -6,7 +6,6 @@
     "no-console": "warn",
     "no-var": "error",
     "no-html-link-for-pages": "off",
-    "semi": "error",
-    "quotes": "error"
+    "semi": "error"
   }
 }
