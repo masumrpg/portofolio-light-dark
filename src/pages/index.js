@@ -25,7 +25,7 @@ export default function Home() {
       <TransitionEffect />
 
       <article
-        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start transition-all delay-[700ms] dark:transition-all dark:delay-[700ms]`}
+        className={"flex min-h-screen items-center text-dark dark:text-light sm:items-start transition-all delay-[700ms] dark:transition-all dark:delay-[700ms]"}
       >
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
           <div className="flex w-full items-start justify-between md:flex-col">

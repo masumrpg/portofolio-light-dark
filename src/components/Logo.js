@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import blackLogo from '../../public/images/black-logo.png';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import blackLogo from "../../public/images/black-logo.png";
 
 
 let MotionLink = motion(Link);

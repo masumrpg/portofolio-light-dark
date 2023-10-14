@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useRef, useState, useEffect } from "react";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
-import { HiOutlineMail } from 'react-icons/hi';
-import { FaFacebookMessenger } from 'react-icons/fa';
-import { BsWhatsapp } from 'react-icons/bs';
-import { FaCheckCircle } from 'react-icons/fa';
+import { HiOutlineMail } from "react-icons/hi";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaCheckCircle } from "react-icons/fa";
 
 const EmailSent = () => {
   return (
@@ -41,7 +41,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_1czp9ns', 'template_ebjr4yb', form.current, '44RxuASXDJFAdKPDK');
+    emailjs.sendForm("service_1czp9ns", "template_ebjr4yb", form.current, "44RxuASXDJFAdKPDK");
 
     e.target.reset();
     setEmailSent(true);
@@ -54,7 +54,7 @@ export default function Contact() {
       </Head>
       <TransitionEffect />
       <main
-        className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
+        className={"w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden"}
       >
         <Layout className="pt-16">
           <AnimatedText
