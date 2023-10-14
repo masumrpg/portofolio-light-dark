@@ -45,7 +45,7 @@ export default function About() {
       </Head>
       <TransitionEffect />
       <main
-        className={`flex w-full flex-col items-center justify-center text-dark dark:text-light`}
+        className={"flex w-full flex-col items-center justify-center text-dark dark:text-light"}
       >
         <Layout className="pt-16">
           <AnimatedText

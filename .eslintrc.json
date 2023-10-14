@@ -2,6 +2,11 @@
   "extends": "next/core-web-vitals",
   "rules": {
     // enable additional rules
-    "semi": ["error", "always"]
+    "import/prefer-default-export": "off",
+    "no-console": "warn",
+    "no-var": "error",
+    "no-html-link-for-pages": "off",
+    "semi": "error",
+    "quotes": "error"
   }
 }
