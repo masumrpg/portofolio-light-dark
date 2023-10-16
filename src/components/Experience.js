@@ -65,20 +65,20 @@ const Experience = () => {
             position="Administration"
             company="Pangestu Broiler"
             companyLink="https://www.google.com/search?q=pangestu+broiler&rlz=1C1ONGR_enID1051ID1051&oq=pangestu+broiler&aqs=chrome..69i57.4848j0j7&sourceid=chrome&ie=UTF-8#rlimm=9195363849140769349"
-            time="2022-Present"
+            time="2022-2023"
             address="Kuwarasan, KBM"
             work="Worked on a team responsible for developing company, make a admin inputer with ExcelVBA for fast input data, handle finance, human resources and many more."
           />
-          {/* <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="https://google.com"
-              time="2022-Present"
-              address="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            />
+          <Details
+            position="Creative Worker"
+            company="Kakang Arif Cinematography"
+            companyLink="https://msha.ke/kakangarifcinematography/?fbclid=PAAaZ58py2er4w8YuYWEDdr0_2xqVD0wBdgDHPDxM7tkLxwzFASXxYbw4FiAw"
+            time="2020-2021"
+            address="Mountain View, CA"
+            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+          />
 
-            <Details
+          {/* <Details
               position="Intern"
               company="Facebook"
               companyLink="https://facebook.com"
