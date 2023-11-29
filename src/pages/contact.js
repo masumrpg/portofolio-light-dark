@@ -74,8 +74,8 @@ export default function Contact() {
               border-r-4 border-b-4 dark:bg-dark dark:border-light dark:text-light  transition-all delay-[1000ms] dark:transition-all dark:delay-[500ms]">
                 <BsWhatsapp className="ml-[44%] mb-3 text-[1.5rem]" />
                 <h3 className="font-bold">Whatsapp</h3>
-                <p className="mb-3">+6287729647721</p>
-                <Link href="https://wa.me/6287729647721" className="p-2 py-1 rounded-xl sm:flex-col bg-dark text-light first:mt-0 border-2 border-light dark:bg-light dark:border-dark dark:text-dark hover:bg-light hover:border-dark hover:text-dark hover:dark:bg-dark hover:dark:border-light hover:dark:text-light">Kirim Pesan</Link>
+                <p className="mb-3">+6285218939086</p>
+                <Link href="https://wa.me/6285218939086" className="p-2 py-1 rounded-xl sm:flex-col bg-dark text-light first:mt-0 border-2 border-light dark:bg-light dark:border-dark dark:text-dark hover:bg-light hover:border-dark hover:text-dark hover:dark:bg-dark hover:dark:border-light hover:dark:text-light">Kirim Pesan</Link>
               </div>
               <div
                 className="w-full p-4 py-6 my-2 rounded-xl sm:flex-col items-center justify-center text-center
