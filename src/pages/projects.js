@@ -6,8 +6,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/al-quran-react-native.png";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
+import proj2 from "../../public/images/projects/porto-html.png";
+import proj3 from "../../public/images/projects/porto-react.png";
 import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
 import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
 import proj6 from "../../public/images/projects/devdreaming.jpg";
@@ -190,7 +190,35 @@ export default function Projects() {
                 github="https://github.com/masumrpg/Al-Quran-Offline"
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Portofolio"
+                title="Portofolio HTML CSS JS"
+                img={proj2}
+                link="https://masumrpg.github.io/Portofolio"
+                github="https://github.com/masumrpg/Portofolio"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Portofolio"
+                title="Portofolio ReactJS"
+                img={proj3}
+                link="https://masumrpg.netlify.app"
+                github="https://github.com/masumrpg/portofolioReactJS"
+              />
+            </div>
+            {/* <div className="col-span-12">
+              <FeaturedProject
+                type="Mobile React Native"
+                title="Al Qu'ran Offline"
+                summary="A mobile Al Qur'an App using React Native, Expo, Expo Router and Expo Tabs. It shows detail surah almost all the verses. Translete only in Indonesia for now."
+                img={proj1}
+                link="https://play.google.com/store/apps/details?id=com.masumrpg.AlQuranOffline"
+                github="https://github.com/masumrpg/Al-Quran-Offline"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website Template"
                 title="NFT collection Website"
