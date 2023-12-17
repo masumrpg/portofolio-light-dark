@@ -8,7 +8,7 @@ import Link from "next/link";
 import proj1 from "../../public/images/projects/al-quran-react-native.png";
 import proj2 from "../../public/images/projects/porto-html.png";
 import proj3 from "../../public/images/projects/porto-react.png";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
+import proj4 from "../../public/images/projects/proj4-nextjs-porto.png";
 import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
 import proj6 from "../../public/images/projects/devdreaming.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -208,6 +208,16 @@ export default function Projects() {
                 github="https://github.com/masumrpg/portofolioReactJS"
               />
             </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Portfolio NextJS"
+                title="Next Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                img={proj4}
+                link="https://masumrpg.vercel.app"
+                github="https://github.com/masumrpg/masum-rpg.git"
+              />
+            </div>
             {/* <div className="col-span-12">
               <FeaturedProject
                 type="Mobile React Native"
@@ -223,8 +233,8 @@ export default function Projects() {
                 type="Website Template"
                 title="NFT collection Website"
                 img={proj2}
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+                link="link"
+                github="link"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -232,8 +242,8 @@ export default function Projects() {
                 type="Website"
                 title="Fashion Studio Website"
                 img={proj3}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                link="link"
+                github="link"
               />
             </div>
             <div className="col-span-12">
@@ -242,8 +252,8 @@ export default function Projects() {
                 title="React Portfolio Website"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
                 img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
+                link="link"
+                github="link"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -251,17 +261,17 @@ export default function Projects() {
                 type="Website Template"
                 img={proj5}
                 title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                link="link"
+                github="link"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Blog Website"
                 img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
+                title="Title"
+                link="link"
+                github="link"
               />
             </div> */}
           </div>

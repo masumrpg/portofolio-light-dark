@@ -81,7 +81,7 @@ export default function Home() {
           <Image
             className="relative h-auto w-full invisible dark:visible transition-all delay-700 animate-bounce"
             src={lightBulb}
-            alt="Codebucks"
+            alt="Masum"
           />
         </div>
       </article>
